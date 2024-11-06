@@ -1,0 +1,2 @@
+web : gunicorn api23.wsgi --log-file
+web :python manage.py migrate && gunicorn api23.wsg
